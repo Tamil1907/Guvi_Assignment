@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Registration</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background:#f2f2f2;
+        padding:20px;
+    }
+
+    .container{
+        border:2px solid #333;
+        padding:30px;
+        max-width:1000px;
+        margin:auto;
+        background:#fff;
+    }
+
+    h1{
+        text-align:center;
+        margin-bottom:20px;
+    }
+
+    .seats{
+        text-align:center;
+        font-size:24px;
+        margin-bottom:40px;
+    }
+
+    .form-box{
+        border:2px solid #333;
+        padding:30px;
+        display:flex;
+        gap:50px;
+        align-items:flex-start;
+    }
+
+    .image-section{
+        width:250px;
+        display:flex;
+        justify-content:center;
+    }
+
+    .image-box{
+        width:180px;
+        height:220px;
+        border:2px solid #333;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .image-circle{
+        width:120px;
+        height:120px;
+        border:2px solid #333;
+        border-radius:50%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:22px;
+    }
+
+    .form-section{
+        flex:1;
+    }
+
+    .row{
+        display:flex;
+        align-items:center;
+        margin-bottom:15px;
+    }
+
+    .row label{
+        width:180px;
+        text-align:right;
+        margin-right:15px;
+        font-size:18px;
+    }
+
+    .row input,
+    .row select{
+        width:350px;
+        padding:8px;
+        font-size:16px;
+    }
+
+    .buttons{
+        margin-top:30px;
+        display:flex;
+        justify-content:center;
+        gap:40px;
+    }
+
+    button{
+        width:180px;
+        padding:10px;
+        font-size:18px;
+        cursor:pointer;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Event 1</h1>
+
+    <div class="seats">
+        Number of available seats: 23
+    </div>
+
+    <div class="form-box">
+
+        <div class="image-section">
+            <div class="image-box">
+                <div class="image-circle">
+                    Image
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+
+            <div class="row">
+                <label>Name:</label>
+                <input type="text">
+            </div>
+
+            <div class="row">
+                <label>Email:</label>
+                <input type="email">
+            </div>
+
+            <div class="row">
+                <label>Phone No.:</label>
+                <input type="tel">
+            </div>
+
+            <div class="row">
+                <label>Number of seats:</label>
+                <select>
+                    <option>1</option>
+                    <option selected>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <label>Name of Attendee 2:</label>
+                <input type="text">
+            </div>
+
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Cancel</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
